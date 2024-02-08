@@ -10,6 +10,7 @@ services:
       - url-server
   url-server:
     build: .
+    image: dev2708/chotu
     environment:
       - PORT=3000
     depends_on:
