@@ -9,8 +9,8 @@ services:
     depends_on:
       - url-server
   url-server:
-    build:
-      context: .
+    build: .
+    image: dev2708/chotu
     depends_on:
       - mongo
     deploy:
